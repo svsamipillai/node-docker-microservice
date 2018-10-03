@@ -11,10 +11,11 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
 
-    working_directory: ~/repo
+    working_directory: ~/repo    
 
     steps:
       - checkout
-      - run: cd ./users-service
+      - run: pwd
+      - run: cd ~/repo/users-service
       - run: npm install
       - run: npm test
