@@ -16,6 +16,6 @@ jobs:
     steps:
       - checkout
       - run: pwd
-      - run: cd ~/repo/users-service
+      - run: cd ~/repo/node-docker-microservice/users-service
       - run: npm install
       - run: npm test
